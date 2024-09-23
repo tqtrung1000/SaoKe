@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Transactions</title>
+    <script src="/scripts/search.js"></script>
+</head>
+
+<body>
+    <h1>Search Transactions</h1>
+    <p id="user-name"></p>
+    <form onsubmit="searchTransactions(event)">
+        <label for="transaction_date">Ngày:</label>
+        <input type="date" id="transaction_date" name="transaction_date"><br><br>
+        
+        <label for="transaction_code">Mã giao dịch:</label>
+        <input type="text" id="transaction_code" name="transaction_code"><br><br>
+        
+        <label for="amount">Số tiền:</label>
+        <input type="text" id="amount" name="amount"><br><br>
+        
+        <label for="description">Nội dung chuyển tiền:</label>
+        <input type="text" id="description" name="description"><br><br>
+        
+        <button type="submit">Search</button>
+        <button type="reset">Reset</button>
+    </form>
+    <pre id="results"></pre>
+</body>
+
+</html>
